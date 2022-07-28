@@ -94,9 +94,4 @@ $ cd <sketchbook>/libraries
 $ rm -rf ros_lib
 $ rosrun rosserial_arduino make_libraries.py 
 ```
-4- Create the ros_lib folder in some convenient directory:
- ```
-$ cd <some_empty_directory>
-$ rosrun rosserial_arduino make_libraries.py .
- ```
  
