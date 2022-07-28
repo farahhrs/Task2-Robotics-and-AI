@@ -32,8 +32,15 @@ $ catkin_make
 ```
 $ roslaunch robot_arm_pkg check_motors.launch
 ```
+![image](https://user-images.githubusercontent.com/67878227/181501406-bcc4c2ec-9b5a-4e81-a4fb-b79292c3f3ec.png)
+
 8- Controlling the motors joint_state_publisher
 ```
 $ rqt_graph
+```
+![image](https://user-images.githubusercontent.com/67878227/181501569-4898bd46-e5f7-429e-a645-eaed79013f64.png)
+
+```
 $ rostopic echo /joint_states
 ```
+![image](https://user-images.githubusercontent.com/67878227/181501642-313bb5d6-9bc2-48dc-b593-1673b49b31bb.png)
