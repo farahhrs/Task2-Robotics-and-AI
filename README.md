@@ -79,4 +79,24 @@ $ sudo apt-get install ros-noetic-rosserial
 $ sudo apt-get install ros-kinetic-rosserial
 
 ```
-
+2- Clone rosserial from the github repository, generate the rosserial_msgs needed for communication, and make the library files in the <ws>/devel/lib directory:
+  
+```
+$ cd <ws>/src
+$ git clone https://github.com/ros-drivers/rosserial.git
+$ cd <ws>
+$ catkin_make
+$ catkin_make install
+```
+3- Install ros_lib into the Arduino Environment:
+```
+$ cd <sketchbook>/libraries
+$ rm -rf ros_lib
+$ rosrun rosserial_arduino make_libraries.py 
+```
+4- Create the ros_lib folder in some convenient directory:
+ ```
+$ cd <some_empty_directory>
+$ rosrun rosserial_arduino make_libraries.py .
+ ```
+ 
