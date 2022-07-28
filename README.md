@@ -72,7 +72,7 @@ $ sudo ./install.sh
 ```
 Note: By default Arduino is installed to /usr/local/bin/arduino, you can find a new icon on the desktop and application list.
 
-## rosserial installation steps:
+## rosserial and ros_lib installation steps:
 1- Run the following coed:
 ```
 $ sudo apt-get install ros-noetic-rosserial
@@ -94,4 +94,17 @@ $ cd <sketchbook>/libraries
 $ rm -rf ros_lib
 $ rosrun rosserial_arduino make_libraries.py 
 ```
- 
+4- Configure the USB
+5- Select the Arduino port to be used on Ubuntu system and change the permissions:
+```
+$ ls -l /dev |grep ttyUSB
+$ sudo chmod -R 777 /dev/ttyUSB0
+```
+6- Ppload the code from Arduino IDE
+
+7- Run Rviz:
+```
+$ roslaunch robot_arm_pkg check_motors.launch
+$ rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB0 _baud:=115200
+```
+![image](https://user-images.githubusercontent.com/67878227/181532979-719023b7-03dd-40e3-8c83-dc00b22972eb.png)
