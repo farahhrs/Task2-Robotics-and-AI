@@ -72,6 +72,11 @@ $ sudo ./install.sh
 ```
 Note: By default Arduino is installed to /usr/local/bin/arduino, you can find a new icon on the desktop and application list.
 
-7- rosserial installation
-sudo apt-get install ros-noetic-rosserial
+## rosserial installation steps:
+1- Run the following coed:
+```
+$ sudo apt-get install ros-noetic-rosserial
+$ sudo apt-get install ros-kinetic-rosserial
+
+```
 
