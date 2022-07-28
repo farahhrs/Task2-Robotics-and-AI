@@ -107,4 +107,5 @@ $ sudo chmod -R 777 /dev/ttyUSB0
 $ roslaunch robot_arm_pkg check_motors.launch
 $ rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB0 _baud:=115200
 ```
+  ### Gazebo:
 ![image](https://user-images.githubusercontent.com/67878227/181532979-719023b7-03dd-40e3-8c83-dc00b22972eb.png)
