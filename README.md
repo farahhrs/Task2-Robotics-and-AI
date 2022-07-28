@@ -58,3 +58,16 @@ $ cd arduino/
 ```
 $ wget https://downloads.arduino.cc/arduino-1.8.15-linux64.tar.xz
 ```
+4- Extract the tar.xz file:
+```
+$ tar -xvf ./arduino-1.8.15-linux64.tar.xz
+```
+5- Change the directory:
+```
+$ cd arduino-1.8.15/
+```
+6- Run the installed script:
+```
+$ sudo ./install.sh
+```
+Note: By default Arduino is installed to /usr/local/bin/arduino, you can find a new icon on the desktop and application list
