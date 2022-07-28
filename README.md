@@ -44,3 +44,17 @@ $ rqt_graph
 $ rostopic echo /joint_states
 ```
 ![image](https://user-images.githubusercontent.com/67878227/181501642-313bb5d6-9bc2-48dc-b593-1673b49b31bb.png)
+
+## Arduino IDE installation on Ubunto steps:
+1- Create new directory with the name "arduino":
+```
+$ mkdir arduino
+```
+2- Change the directory:
+```
+$ cd arduino/
+```
+3- Download Arduino IDE:
+```
+$ wget https://downloads.arduino.cc/arduino-1.8.15-linux64.tar.xz
+```
