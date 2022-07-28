@@ -32,3 +32,8 @@ $ catkin_make
 ```
 $ roslaunch robot_arm_pkg check_motors.launch
 ```
+8- Controlling the motors joint_state_publisher
+```
+$ rqt_graph
+$ rostopic echo /joint_states
+```
