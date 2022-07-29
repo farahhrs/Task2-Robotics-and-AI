@@ -1,7 +1,7 @@
 # Task2-Robotics-and-AI
 This task contains the steps of motion trajectories execution for a robot arm in simulation.
 ## Dependencies installation Steps:
-1- Install ROS.
+1- Install ROS
 
 2- Change the directory to catkin/src:
 ```
@@ -73,7 +73,7 @@ $ sudo ./install.sh
 Note: By default Arduino is installed to /usr/local/bin/arduino, you can find a new icon on the desktop and application list.
 
 ## rosserial and ros_lib installation steps:
-1- Run the following coed:
+1- Run the following code:
 ```
 $ sudo apt-get install ros-noetic-rosserial
 $ sudo apt-get install ros-kinetic-rosserial
@@ -95,6 +95,7 @@ $ rm -rf ros_lib
 $ rosrun rosserial_arduino make_libraries.py 
 ```
 4- Configure the USB
+
 5- Select the Arduino port to be used on Ubuntu system and change the permissions:
 ```
 $ ls -l /dev |grep ttyUSB
